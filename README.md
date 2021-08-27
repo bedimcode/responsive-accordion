@@ -2,7 +2,7 @@
 ## [Watch it on youtube](https://youtu.be/-ZblPRBjJJw)
 ### Responsive Accordion
 
-- Stunning accordion UI design using HTML and CSS.
+- Stunning accordion UI design using HTML CSS & JavaScript.
 - With smooth animation when sliding the hidden content.
 - Icon rotation and font weight when content is open.
 - Developed first with the Mobile First methodology, then for desktop.
