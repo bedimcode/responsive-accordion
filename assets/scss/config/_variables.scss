@@ -6,22 +6,22 @@
     /*========== Colors ==========*/
     --hue-color: 225;
 
-    --first-color: hsl(var(--hue-color), 48%, 35%);
-    --title-color: hsl(var(--hue-color), 48%, 22%);
-    --text-color: hsl(var(--hue-color), 12%, 35%);
-    --body-color: hsl(var(--hue-color), 49%, 98%);
-    --container-color: #FFF;
+    --first-color: ;
+    --title-color: ;
+    --text-color: ;
+    --body-color: ;
+    --container-color: ;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: ;
 
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
 
     @media screen and (min-width: 968px){
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
     }
 }
