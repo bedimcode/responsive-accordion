@@ -26,7 +26,8 @@
 
 /*=============== BASE ===============*/
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -47,18 +48,22 @@ body {
 
 /*=============== ACCORDION ===============*/
 .accordion {
+  display: -ms-grid;
   display: grid;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 100vh;
 }
 
 .accordion__container {
+  display: -ms-grid;
   display: grid;
   row-gap: .75rem;
   padding: 2rem 1rem;
   background-color: var(--container-color);
   border-radius: .5rem;
-  box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+  -webkit-box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
 }
 
 .accordion__title {
@@ -66,12 +71,18 @@ body {
   color: var(--title-color);
   font-weight: 400;
   margin-top: .15rem;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
 }
 
 .accordion__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: .5rem;
+  -webkit-column-gap: .5rem;
+     -moz-column-gap: .5rem;
+          column-gap: .5rem;
   padding: 1.25rem 1.25rem 1.25rem 1rem;
   cursor: pointer;
 }
@@ -83,16 +94,23 @@ body {
 
 .accordion__icon {
   font-size: 1.5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   color: var(--title-color);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
 .accordion__item {
-  box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
+  -webkit-box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
+          box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
   background-color: var(--container-color);
   border-radius: .25rem;
   position: relative;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
   transition: all .25s ease;
 }
 
@@ -142,12 +160,16 @@ body {
 .accordion__content {
   overflow: hidden;
   height: 0;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
   transition: all .25s ease;
 }
 
 /*Rotate icon and add font weight to titles*/
 .accordion-open .accordion__icon {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .accordion-open .accordion__title {
@@ -160,7 +182,8 @@ body {
   .accordion__container {
     width: 550px;
     padding: 2.5rem;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     border-radius: .75rem;
   }
   .accordion__header {
